@@ -1,2 +1,75 @@
 /* Styles for components - buttons, navbars, cards, reusables */
 
+
+@media screen and (max-width: 850px) {
+    
+    /* Mobile menu */
+    #main-nav {display: none;}  
+
+    .fa-bars {
+        color: $font-color;
+    }
+
+    .fa-times {
+        color: $detail-dark-color;
+        padding: 0.75em;
+    }
+
+    #mobile-menu {
+        padding: 0.75em;
+        float: right;
+        position: absolute;
+        top: -20px;
+        right: -10px;
+    }
+
+    .open {
+        font-size: 1.8rem;
+        color: $primary-color;
+        padding-right: 1.4em;
+        padding-top: 0.6em;
+    }
+
+    .overlay {
+        padding-top: 30%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        background-color:  $secondary-color;
+        text-align: center;
+        overflow-x: hidden;
+        transition: 0.5s ease;
+    }
+
+    .overlay .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 20px;
+    }
+
+    .overlay a {
+        display: block;
+        color: $font-color;
+        font-size: 2.4rem;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .overlay a:hover {
+        text-decoration: none;
+    }
+}
+    /* End of mobile menu */
+
+    /* Desktop Styling */
+@media screen and (min-width: 850px) {
+    #mobile-nav,
+    #mobile-menu {
+        display: none;
+    }
+}
+
+/* End of Desktop Styling */

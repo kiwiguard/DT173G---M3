@@ -1,18 +1,77 @@
 <!DOCTYPE html>
-<html lang="se">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gulp automated template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;700&family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <title>Super Secret Intelligence Agency</title>
 </head>
 <body>
     <div class="container">
-        <h1>Hi there!</h1>
+        <header>
+            <div>
+                <h1>Super Secret Intelligence Agency - SSIA</h1>
+                <nav id="main-nav" class="main-nav">
+                    <ul>
+                        <li><a href="index.html" id="active" class="active">Home</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Achievements</a></li>
+                    </ul>
+                </nav>
 
-        <p>Placeholder text - write me like one of your french girls</p>
+                <div id="mobile-nav" class="mobile-nav overlay" style="width: 0px">
+                    <a href="javascript:void(0)" class="close" onclick="closeNav()"><i class="fa fa-times fa-1x"></i></a>
+                    <a href="index.html" id="active-mobile" class="active">Home</a>
+                    <a href="#">News</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Achievements</a>
+                </div>
+                <div id="mobile-menu" class="mobile-menu">
+                    <div class="open" onclick="openNav()"><i class="fa fa-bars fa-1x"></i></div>
+                </div> <!-- Mobile nav end-->
+            </div>
+
+
+        </header>
+
+        <div class="welcome-banner">
+            <h1>Welcome back, agent!</h1>
+
+            <p>Please login to view your next assignment:</p>
+            <a href="#" class="btn">Log in</a> <a href="#" class="btn-2nd">Sign up</a>
+        </div>
+
+        <div class="news-section">
+            <h2>Latest Achievements</h2>
+
+            <div class="news-card">
+                <img src="">
+                <h3 class="news-card-title">Titel</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis consequat urna non sollicitudin. Donec id nibh quis sapien ultricies iaculis at non dolor. Fusce vitae velit at dui eleifend commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae velit consectetur, vulputate justo sed, aliquet elit. Donec imperdiet lectus eros, malesuada sagittis diam pulvinar in. Donec placerat iaculis nisi eu volutpat.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+
+            <div class="news-card">
+                <img src="">
+                <h3 class="news-card-title">Titel</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis consequat urna non sollicitudin. Donec id nibh quis sapien ultricies iaculis at non dolor. Fusce vitae velit at dui eleifend commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus vitae velit consectetur, vulputate justo sed, aliquet elit. Donec imperdiet lectus eros, malesuada sagittis diam pulvinar in. Donec placerat iaculis nisi eu volutpat.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
         
-    </div>
+        <footer class="site-footer">
+            <p>© 2020 · Susanne Nilsson · DT173G - Moment 3</p>
+        </footer>
+    </div> <!-- End Container -->
 
     <script src="js/main.js"></script>
 </body>
