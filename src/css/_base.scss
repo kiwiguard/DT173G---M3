@@ -33,11 +33,17 @@ h1 {
 
 h2 {
     @extend h1;
+    font-size: 3.2rem;
+    margin-bottom:2rem;
+}
+
+h3 {
+    @extend h1;
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
-h3 {
+h4 {
     font-size: 1.3rem;
     color: $dark-accent-color;
     margin: 0.6rem 0 0.05rem 0;
@@ -58,7 +64,8 @@ header {
 
 .welcome-wrapper {
     background-color: $secondary-color;
-}
+    background-image: url('./img/img3.jpg'); //Photo by: Ricardo Gomez Angel /unsplash
+}   
 
 .welcome-section {
     padding: 4rem 0 5rem 0;
