@@ -62,14 +62,15 @@
 
 /* News card styling */
 .news-card {
-    max-width: 350px;
+    max-width: 480px;
     color: $font-color;
     background-color: $secondary-color;
     padding: 15px 20px;
     border-radius: 10px;
 
     img {
-        max-width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
     }  
 
     a {
@@ -92,10 +93,11 @@
 
 /* Screensize styling */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1000px) {
     
     /* Mobile menu */
-    #main-nav {display: none;}  
+    #main-nav {display: none;}
+    .header-logo {display: none;}  
 
     .fa-bars {
         color: $font-color;
@@ -168,7 +170,8 @@
     /* Desktop Styling */
 @media screen and (min-width: 850px) {
     #mobile-nav,
-    #mobile-menu {
+    #mobile-menu,
+    .mobile-logo {
         display: none;
     }
 }
