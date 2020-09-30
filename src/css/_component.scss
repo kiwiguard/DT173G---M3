@@ -1,6 +1,41 @@
 /* Styles for components - buttons, navbars, cards, reusables */
 
 
+/* Buttons */
+@mixin buttons ($inverted: false) {
+    padding: 15px 45px;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $secondary-color;
+    
+    &:hover {
+        background-color: $primary-hover;
+    }
+
+    @if $inverted {
+        background-color: $light-accent-color;
+        color: $secondary-light;
+
+        &:hover {
+            background-color: $secondary-hover;
+        }
+    }
+
+    
+}
+
+.btn {
+    @include buttons;
+
+}
+
+.btn-2nd {
+    @include buttons($inverted: true)
+}
+
+
+/* Screensize styling */
+
 @media screen and (max-width: 850px) {
     
     /* Mobile menu */

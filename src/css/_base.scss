@@ -3,16 +3,40 @@
 
 /* Variables */
 $font-stack: Helvetica, sans-serif;
-$primary-color: #00171F;
-$secondary-color: #CED0CE;
-$detail-dark-color: #6B0F1A;
-$detail-light-color: #A31621;
-$font-color: #E6E8E6;
-
+$primary-color: #6B0F1A;
+$primary-hover: darken($primary-color, 10%);
+$secondary-color: #E6E8E6;
+$secondary-hover: darken($secondary-color, 20%);
+$secondary-light: lighten($secondary-color, 30%);
+$detail-dark-color: #00171F;
+$dark-accent-color: #A31621;
+$light-accent-color: #CED0CE;
+$font-color: #000a0e;
 
 /* Typography */
 body {
-    background-color: $primary-color;
-    font: 1.6rem $font-stack;
+    background-color: $secondary-color;
+    font-family: $font-stack;
+    font-size: 1rem;
     color: $font-color;
+}
+
+/* Header styling */
+header {
+    background-color: $primary-color;
+}
+
+.header-logo {
+    color: $secondary-color;
+    font-size: 1.9rem;
+}
+
+.main-nav {
+    ul {
+        li {
+            a {
+                color: $secondary-color;
+            }
+        }
+    }
 }
