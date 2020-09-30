@@ -22,6 +22,26 @@ body {
     color: $font-color;
 }
 
+p {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.9rem;
+    padding: 1% 0;
+}
+
+h2 {
+    @extend h1;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: $dark-accent-color;
+}
+
 /* Header styling */
 header {
     background-color: $primary-color;
@@ -32,14 +52,23 @@ header {
     font-size: 1.9rem;
 }
 
-.main-nav {
-    ul {
-        li {
-            a {
-                color: $secondary-color;
-            }
-        }
-    }
+/* Block styling */
+
+.welcome-wrapper {
+    background-color: $secondary-color;
+}
+
+.welcome-section {
+    padding: 4rem 0 5rem 0;
+}
+
+.news-wrapper {
+    background-color: $detail-dark-color;
+    color: $secondary-color;
+}
+
+.news-section {
+    @extend .welcome-section;
 }
 
 /* Footer styling */

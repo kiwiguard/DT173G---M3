@@ -18,3 +18,13 @@ body {
 footer {
     flex-shrink: 0;
 }
+
+/* CSS-grids*/
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-around;
+}
