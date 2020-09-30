@@ -12,6 +12,7 @@ $detail-dark-color: #00171F;
 $dark-accent-color: #A31621;
 $light-accent-color: #CED0CE;
 $font-color: #000a0e;
+$footer: #191919;
 
 /* Typography */
 body {
@@ -39,4 +40,11 @@ header {
             }
         }
     }
+}
+
+/* Footer styling */
+footer {
+    background-color: $footer;
+    color: $secondary-color;
+    height: 100px;
 }
