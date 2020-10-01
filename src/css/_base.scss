@@ -2,14 +2,16 @@
 
 
 /* Variables */
-$font-stack: Helvetica, sans-serif;
-$primary-color: #6B0F1A;
+$font-sans: 'Roboto', sans-serif;
+$font-serif: 'Droid serif', serif;
+
+$primary-color: #00212c;
 $primary-hover: darken($primary-color, 10%);
 $secondary-color: #E6E8E6;
 $secondary-hover: darken($secondary-color, 20%);
 $secondary-light: lighten($secondary-color, 30%);
 $detail-dark-color: #00171F;
-$dark-accent-color: #A31621;
+$dark-accent-color: #6B0F1A;
 $light-accent-color: #CED0CE;
 $font-color: #000a0e;
 $footer: #191919;
@@ -17,7 +19,7 @@ $footer: #191919;
 /* Typography */
 body {
     background-color: $secondary-color;
-    font-family: $font-stack;
+    font-family: $font-serif;
     font-size: 1rem;
     color: $font-color;
 }
@@ -27,6 +29,7 @@ p {
 }
 
 h1 {
+    font-family: $font-sans;
     font-size: 1.9rem;
     padding: 1% 0;
 }
@@ -39,14 +42,16 @@ h2 {
 
 h3 {
     @extend h1;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-family: $font-sans;
+    font-size: 1.4rem;
+    font-weight: 700;
     color: $dark-accent-color;
-    margin: 0.6rem 0 0.05rem 0;
+    margin: 2rem 0 1rem 0;
 }
 
 /* Header styling */
@@ -62,13 +67,14 @@ header {
 
 /* Block styling */
 
-.welcome-wrapper {
+.welcome-wrapper { 
     background-color: $secondary-color;
-    background-image: url('./img/img3.jpg'); //Photo by: Ricardo Gomez Angel /unsplash
-}   
+    background-image: url('../img/img3.jpg'); //Photo by: Ricardo Gomez Angel /unsplash
+    background-size: 100% auto;
+}
 
 .welcome-section {
-    padding: 4rem 0 5rem 0;
+    padding: 10rem 0 12rem 0;
 }
 
 .news-wrapper {
@@ -77,12 +83,12 @@ header {
 }
 
 .news-section {
-    @extend .welcome-section;
+    padding: 5rem 0 10rem 0;
 }
 
 /* Footer styling */
 footer {
     background-color: $footer;
-    color: $secondary-color;
+    color: $light-accent-color;
     height: 100px;
 }
